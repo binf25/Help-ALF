@@ -21,4 +21,8 @@ describe("findSpaceship", function() {
 		expect(findSpaceship("X")).toEqual([0,0]);
 	});
 
+	it("should return the coordinates [3,0], when spaceship is found", function() {
+		expect(findSpaceship("...X.")).toEqual([3,0]);
+	});
+
 });
