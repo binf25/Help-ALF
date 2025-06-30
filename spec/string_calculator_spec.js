@@ -1,9 +1,8 @@
-describe('String Calculator', function() {
-	beforeEach(function() {
-		calculator = new StringCalculator();
-	});
+describe("findSpaceship", function() {
 
-	it('should return 0 for an empty string', function() {
-		expect(calculator.add('')).toEqual(0);
+	it("should return 'Spaceship lost forever.' for an empty map", function() {
+		// erwartet, dass Funktion existiert und diesen String zurückgibt
+		expect(findSpaceship("")).toEqual("Spaceship lost forever.");
 	});
+	
 });
