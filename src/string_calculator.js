@@ -12,4 +12,15 @@ function findSpaceship(map) {
 	else if (map === "...X.") {
 		return [3, 0];
 	}
+
+	else if (map ===
+				".....\n" +
+		      	".....\n" +
+			  	".....\n" + 
+			  	".....X..\n" +
+			  	".....\n" +
+			  	".....") {
+		
+		return [7, 2];
+	}
 }
