@@ -25,4 +25,15 @@ describe("findSpaceship", function() {
 		expect(findSpaceship("...X.")).toEqual([3,0]);
 	});
 
+	it("should return the coordinates [7,2], when spaceship is found", function() {
+		map = ".....\n" +
+		      ".....\n" +
+			  ".....\n" + 
+			  ".....X..\n" +
+			  ".....\n" +
+			  ".....";
+
+		expect(findSpaceship(map)).toEqual([7,2]);
+	});
+
 });
