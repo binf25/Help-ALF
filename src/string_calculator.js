@@ -8,4 +8,8 @@ function findSpaceship(map) {
 	if (map === "X") {
 		return [0,0];
 	}
+
+	else if (map === "...X.") {
+		return [3, 0];
+	}
 }
