@@ -17,4 +17,8 @@ describe("findSpaceship", function() {
 		expect(findSpaceship(map)).toEqual("Spaceship lost forever.");
 	});
 
+	it("should return the coordinates [0,0] for a 1x1 map, when spaceship is found", function() {
+		expect(findSpaceship("X")).toEqual([0,0]);
+	});
+
 });
