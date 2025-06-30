@@ -9,4 +9,12 @@ describe("findSpaceship", function() {
 		expect(findSpaceship(".")).toEqual("Spaceship lost forever.");
 	});
 
+	it("should return 'Spaceship lost forever.' when 'X' is not present in the map", function() {
+		map = ".....\n" +
+		      ".....\n" +
+			  ".....";
+
+		expect(findSpaceship(map)).toEqual("Spaceship lost forever.");
+	});
+
 });
